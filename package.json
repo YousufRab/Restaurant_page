@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/YousufRab/Restaurant_page/issues"
   },
-  "homepage": "https://github.com/YousufRab/Restaurant_page#readme"
+  "homepage": "https://github.com/YousufRab/Restaurant_page#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
