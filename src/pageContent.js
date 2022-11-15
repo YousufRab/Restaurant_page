@@ -3,6 +3,7 @@ import shPic from './shakshouka.jpeg';
 export const pageElements = function () {
 
     const header = document.createElement('h1');
+    header.id = 'homePage';
     header.innerHTML = "Sono in Calabria Bistro";
 
     const restText = document.createElement('p');
