@@ -1,13 +1,17 @@
 @font-face {
     font-family: 'MyFont';
-    src: url(./cafe-francoise.otf),
-    url(./pretty-good.ttf);
+    src: url(./cafe-francoise.otf);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'MyFont2';
+    src: url(./Quesha.ttf);
+    font-style: normal;
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: rgb(255, 227, 191);
 }
 
 h1 {
@@ -19,15 +23,34 @@ h1 {
 
 p {
     text-align: center;
-    font-size: 22px;
+    font-size: 30px;
     letter-spacing: 0.5px;
+    font-family: 'MyFont2';
 }
 
 .foodImg {
     margin-top: 30px;
-    height: 450px;
     border-radius: 20%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home, .menu, .contact {
+    height: 50px;
+    font-size: 26px;
+    font-family: 'MyFont2';
+    margin-right: 20px;
+}
+
+.tabContainer {
+    width: 250px;
+    height: 45px;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
