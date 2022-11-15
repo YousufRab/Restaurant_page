@@ -1,6 +1,8 @@
 import './style.css';
-import {pageElements} from './pageContent';
+import {pageElements, pageTabs} from './pageContent';
 
 const content = document.querySelector('#content');
-content.appendChild(pageElements());
+
+content.append(pageTabs(), pageElements());
+
 console.log("I am up and running!");
