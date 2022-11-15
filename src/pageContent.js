@@ -29,17 +29,23 @@ export const pageTabs = function () {
     
     const homeBtn = document.createElement('div');
     homeBtn.classList.add('home');
-    homeBtn.innerHTML = "Home |";
+    homeBtn.innerHTML = "Home";
+
+    const separator = document.createElement('div');
+    separator.innerHTML = "|";
+
+    const separator2 = document.createElement('div');
+    separator2.innerHTML = "|";
 
     const menuBtn = document.createElement('div');
     menuBtn.classList.add('menu');
-    menuBtn.innerHTML = "Menu |";
+    menuBtn.innerHTML = "Menu";
 
     const contactBtn = document.createElement('div');
     contactBtn.classList.add('contact');
     contactBtn.innerHTML = "Contact";
     
-    tabHolder.append(homeBtn, menuBtn, contactBtn);
+    tabHolder.append(homeBtn, separator, menuBtn, separator2, contactBtn);
 
     return tabHolder;
 }
