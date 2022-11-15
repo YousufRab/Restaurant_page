@@ -40,17 +40,31 @@ p {
     height: 50px;
     font-size: 26px;
     font-family: 'MyFont2';
-    margin-right: 20px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.home:hover, .menu:hover, .contact:hover {
+    cursor: pointer;
+}
+
+.home {
+    margin-left: 10px;
+}
+
+.contact {
+    margin-right: 5px;
 }
 
 .tabContainer {
-    width: 250px;
+    width: 280px;
     height: 45px;
     border: 1px solid black;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -40px;
 }
