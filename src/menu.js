@@ -20,6 +20,7 @@ export const menuPage = function() {
     brunchContainer.append(brunchHeader);
 
     const brunchItem1 = document.createElement('div');
+    brunchItem1.classList.add('menuItemDiv');
     const item1Name = document.createElement('div');
     item1Name.innerHTML = "Bruschetta";
     item1Name.classList.add('menuItemName');
