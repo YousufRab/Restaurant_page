@@ -17,8 +17,6 @@ export const pageElements = function () {
     foodPic.classList.add('foodImg');
 
     header.append(restText, restInfo, foodPic);
-
-  
     
     return header;
 }
