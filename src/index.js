@@ -1,5 +1,6 @@
 import './style.css';
 import {pageElements, pageTabs} from './pageContent';
+import {menuPage} from './menu';
 
 const content = document.querySelector('#content');
 
@@ -9,6 +10,8 @@ const menuPageLoad = () => {
 
     const header = document.querySelector('#homePage');
     header.remove();
+    
+    content.append(menuPage());
 
 }
 
