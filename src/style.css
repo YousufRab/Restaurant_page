@@ -75,3 +75,8 @@ p {
     letter-spacing: 0.5px;
     font-family: 'MyFont2';
 }
+
+#brunchHeader {
+    font-family: 'MyFont2';
+    font-size: 30px;
+}
