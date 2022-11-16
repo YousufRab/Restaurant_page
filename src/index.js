@@ -4,7 +4,7 @@ import {menuPage} from './menu';
 
 const content = document.querySelector('#content');
 
-content.append(pageTabs(), pageElements());
+content.append(pageTabs(), menuPage());
 
 const menuPageLoad = () => {
 
