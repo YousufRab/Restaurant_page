@@ -2,7 +2,7 @@
     font-family: 'MyFont';
     src: url(./cafe-francoise.otf);
     font-style: normal;
-    font-weight: 300;
+    font-weight: 100;
 }
 @font-face {
     font-family: 'MyFont2';
@@ -69,14 +69,36 @@ p {
     margin-bottom: -40px;
 }
 
-.menuItemText {
+.menuItemText, .menuItemName {
     text-align: center;
-    font-size: 22px;
+    font-size: 26px;
     letter-spacing: 0.5px;
     font-family: 'MyFont2';
+}
+
+.menuItemName {
+    margin-top: 8px;
+    margin-bottom: 6px;
 }
 
 #brunchHeader {
     font-family: 'MyFont2';
     font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.menuItemDiv {
+    border: 1px solid black;
+    border-radius: 16px;
+    width: 462px;
+    height: 400px;
+}
+
+.menuImage {
+    height: 275px;
+    width: 410px;
+    margin-bottom: -35px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
