@@ -68,3 +68,10 @@ p {
     margin-right: auto;
     margin-bottom: -40px;
 }
+
+.menuItemText {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    font-family: 'MyFont2';
+}
