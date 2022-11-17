@@ -2,6 +2,7 @@ import brusc from './Bruschetta.jpg';
 import ricPan from './RicPancakes.jpg';
 import frit from './frittata.jpg';
 import frToast from './FrenchToast.jpg';
+import cann from './Cannoli.jpg';
 
 export const menuPage = function() {
 
@@ -74,7 +75,20 @@ export const menuPage = function() {
     item4.innerHTML = "White bread topped with blueberries, banana slices and maple Syrup";
     brunchItem4.append(item4Name, item4Img, item4);
 
-    brunchContainer.append(brunchItem1, brunchItem2, brunchItem3, brunchItem4);
+    const brunchItem5 = document.createElement('div');
+    brunchItem5.classList.add('menuItemDiv');
+    const item5Name = document.createElement('div');
+    item5Name.innerHTML = "Cannoli";
+    item5Name.classList.add('menuItemName');
+    const item5Img = new Image();
+    item5Img.src = cann;
+    item5Img.classList.add('menuImage');
+    const item5 = document.createElement('p');
+    item5.classList.add('menuItemText');
+    item5.innerHTML = "Assorted pastry shells filled with ricotta, pistachio, chocolate chip, jam and more";
+    brunchItem5.append(item5Name, item5Img, item5);
+
+    brunchContainer.append(brunchItem1, brunchItem2, brunchItem3, brunchItem4, brunchItem5);
 
 
 
