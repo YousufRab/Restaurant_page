@@ -1,5 +1,6 @@
 import brusc from './Bruschetta.jpg';
 import ricPan from './RicPancakes.jpg';
+import frit from './frittata.jpg';
 
 export const menuPage = function() {
 
@@ -46,7 +47,20 @@ export const menuPage = function() {
     item2.innerHTML = "Fluffy home made ricotta pancakes, cinnamon and blueberries"
     brunchItem2.append(item2Name, item2Img, item2);
 
-    brunchContainer.append(brunchItem1, brunchItem2);
+    const brunchItem3 = document.createElement('div');
+    brunchItem3.classList.add('menuItemDiv');
+    const item3Name = document.createElement('div');
+    item3Name.innerHTML = "Frittata";
+    item3Name.classList.add('menuItemName');
+    const item3Img = new Image();
+    item3Img.src = frit;
+    item3Img.classList.add('menuImage');
+    const item3 = document.createElement('p');
+    item3.classList.add('menuItemText');
+    item3.innerHTML = "Eggs, sausage, vegetables baked together in a cast iron pan. Delicious";
+    brunchItem3.append(item3Name, item3Img, item3);
+
+    brunchContainer.append(brunchItem1, brunchItem2, brunchItem3);
 
 
 
