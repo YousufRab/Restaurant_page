@@ -1,4 +1,5 @@
 import brusc from './Bruschetta.jpg';
+import ricPan from './RicPancakes.jpg';
 
 export const menuPage = function() {
 
@@ -35,6 +36,15 @@ export const menuPage = function() {
     const brunchItem2 = document.createElement('div');
     brunchItem2.classList.add('menuItemDiv');
     const item2Name = document.createElement('div');
+    item2Name.innerHTML = "Ricotta pancakes";
+    item2Name.classList.add('menuItemName');
+    const item2Img = new Image();
+    item2Img.src = ricPan;
+    item2Img.classList.add('menuImage');
+    const item2 = document.createElement('p');
+    item2.classList.add('menuItemText');
+    item2.innerHTML = "Fluffy home made ricotta pancakes, cinnamon and blueberries"
+    brunchItem2.append(item2Name, item2Img, item2);
 
     brunchContainer.append(brunchItem1);
 
