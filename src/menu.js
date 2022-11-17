@@ -32,6 +32,10 @@ export const menuPage = function() {
     item1.innerHTML = "Marinated cherry tomatoes, black olives, mozzarella and olive oil on toasted baguette slices";
     brunchItem1.append(item1Name, item1Img, item1);
 
+    const brunchItem2 = document.createElement('div');
+    brunchItem2.classList.add('menuItemDiv');
+    const item2Name = document.createElement('div');
+
     brunchContainer.append(brunchItem1);
 
 
