@@ -1,6 +1,7 @@
 import brusc from './Bruschetta.jpg';
 import ricPan from './RicPancakes.jpg';
 import frit from './frittata.jpg';
+import frToast from './FrenchToast.jpg';
 
 export const menuPage = function() {
 
@@ -60,7 +61,20 @@ export const menuPage = function() {
     item3.innerHTML = "Eggs, sausage, vegetables baked together in a cast iron pan. Delicious";
     brunchItem3.append(item3Name, item3Img, item3);
 
-    brunchContainer.append(brunchItem1, brunchItem2, brunchItem3);
+    const brunchItem4 = document.createElement('div');
+    brunchItem4.classList.add('menuItemDiv');
+    const item4Name = document.createElement('div');
+    item4Name.innerHTML = "French Toast";
+    item4Name.classList.add('menuItemName');
+    const item4Img = new Image();
+    item4Img.src = frToast;
+    item4Img.classList.add('menuImage');
+    const item4 = document.createElement('p');
+    item4.classList.add('menuItemText');
+    item4.innerHTML = "Toasted white bread topped with blueberries, banana slices and maple Syrup, of course";
+    brunchItem4.append(item4Name, item4Img, item4);
+
+    brunchContainer.append(brunchItem1, brunchItem2, brunchItem3, brunchItem4);
 
 
 
