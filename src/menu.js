@@ -105,11 +105,5 @@ export const menuPage = function() {
 
     brunchContainer.append(brunchItem1, brunchItem2, brunchItem3, brunchItem4, brunchItem5, brunchItem6);
 
-
-
-
-
-
-
     return menuHeader;
 }
