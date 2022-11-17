@@ -71,7 +71,7 @@ export const menuPage = function() {
     item4Img.classList.add('menuImage');
     const item4 = document.createElement('p');
     item4.classList.add('menuItemText');
-    item4.innerHTML = "Toasted white bread topped with blueberries, banana slices and maple Syrup, of course";
+    item4.innerHTML = "White bread topped with blueberries, banana slices and maple Syrup";
     brunchItem4.append(item4Name, item4Img, item4);
 
     brunchContainer.append(brunchItem1, brunchItem2, brunchItem3, brunchItem4);
