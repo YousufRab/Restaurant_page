@@ -46,7 +46,7 @@ export const menuPage = function() {
     item2.innerHTML = "Fluffy home made ricotta pancakes, cinnamon and blueberries"
     brunchItem2.append(item2Name, item2Img, item2);
 
-    brunchContainer.append(brunchItem1);
+    brunchContainer.append(brunchItem1, brunchItem2);
 
 
 
