@@ -9,6 +9,7 @@ export const menuPage = function() {
 
     const menuHeader = document.createElement('h1');
     menuHeader.innerHTML = "Menu";
+    menuHeader.id = 'menuPageHeader';
 
     const menuContainer = document.createElement('div');
     menuContainer.id = "menuCon";
