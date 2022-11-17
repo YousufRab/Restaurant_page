@@ -3,6 +3,7 @@ import ricPan from './RicPancakes.jpg';
 import frit from './frittata.jpg';
 import frToast from './FrenchToast.jpg';
 import cann from './Cannoli.jpg';
+import quiche from './quiche.jpg';
 
 export const menuPage = function() {
 
@@ -88,7 +89,20 @@ export const menuPage = function() {
     item5.innerHTML = "Assorted pastry shells filled with ricotta, pistachio, chocolate chip, jam and more";
     brunchItem5.append(item5Name, item5Img, item5);
 
-    brunchContainer.append(brunchItem1, brunchItem2, brunchItem3, brunchItem4, brunchItem5);
+    const brunchItem6 = document.createElement('div');
+    brunchItem6.classList.add('menuItemDiv');
+    const item6Name = document.createElement('div');
+    item6Name.innerHTML = "Mini quiche";
+    item6Name.classList.add('menuItemName');
+    const item6Img = new Image();
+    item6Img.src = quiche;
+    item6Img.classList.add('menuImage');
+    const item6 = document.createElement('p');
+    item6.classList.add('menuItemText');
+    item6.innerHTML = "Bite sized pastries filled with eggs, cheese, meat and veggies";
+    brunchItem6.append(item6Name, item6Img, item6);
+
+    brunchContainer.append(brunchItem1, brunchItem2, brunchItem3, brunchItem4, brunchItem5, brunchItem6);
 
 
 
