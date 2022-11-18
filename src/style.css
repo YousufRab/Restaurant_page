@@ -114,3 +114,11 @@ p {
     grid-template-rows: auto repeat(1fr);
     grid-template-columns: 1fr 1fr;
 }
+
+#homePage, #menuPageHeader {
+    transition: all 0.2s ease;
+}
+
+#addressPic {
+    height: 500px;
+}
