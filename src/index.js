@@ -45,6 +45,7 @@ const contactPageLoad = () => {
 
     const header = document.querySelector('#homePage');
     const menuHeader = document.querySelector('#menuPageHeader');
+    const contactPageHeader = document.querySelector('#contactPageHeader');
     
     if(typeof(header) != 'undefined' && header != null) {
         header.remove();
@@ -52,7 +53,9 @@ const contactPageLoad = () => {
         menuHeader.remove();
     }
     
-    content.append(contactPage());
+    if (contactPageHeader == null) {
+        content.append(contactPage());
+    }
 }
 
 const homeBtn = document.querySelector('.home');
