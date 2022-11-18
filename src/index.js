@@ -28,10 +28,16 @@ const contactPageLoad = () => {
 
     const header = document.querySelector('#homePage');
     const menuHeader = document.querySelector('#menuPageHeader');
-    header.remove();
-    menuHeader.remove();
+    
+    if(typeof(header) != 'undefined' && header != null) {
+        header.remove();
+    } else if (typeof(menuHeader) != 'undefined' && menuHeader != null) {
+        menuHeader.remove();
+    }
+    
 
-    content.append(contactPageLoad());
+
+    content.append(contactPage());
 }
 
 const homeBtn = document.querySelector('.home');
