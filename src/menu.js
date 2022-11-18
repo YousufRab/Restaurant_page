@@ -41,7 +41,7 @@ export const menuPage = function() {
     const brunchItem2 = document.createElement('div');
     brunchItem2.classList.add('menuItemDiv');
     const item2Name = document.createElement('div');
-    item2Name.innerHTML = "Ricotta pancakes";
+    item2Name.innerHTML = "Sono pancakes";
     item2Name.classList.add('menuItemName');
     const item2Img = new Image();
     item2Img.src = ricPan;
