@@ -2,16 +2,19 @@ import './style.css';
 import {pageElements, pageTabs} from './pageContent';
 import {menuPage} from './menu';
 import {contactPage} from './contact';
+import {footerContent} from './footer';
 
 const content = document.querySelector('#content');
 
-content.append(pageTabs(), pageElements());
+content.append(pageTabs(), pageElements(), footerContent());
 
 const menuPageLoad = () => {
 
     const header = document.querySelector('#homePage');
     const contactPageHeader = document.querySelector('#contactPageHeader');
     const menuHeader = document.querySelector('#menuPageHeader');
+    const footer = document.querySelector('#botline');
+    footer.remove();
 
     if (typeof(header) != 'undefined' && header != null) {
         header.remove();
@@ -20,7 +23,7 @@ const menuPageLoad = () => {
     }
     
     if (menuHeader == null) {
-        content.append(menuPage());
+        content.append(menuPage(), footerContent());
     }
 }
 
@@ -29,7 +32,9 @@ const homePageLoad = () => {
     const header = document.querySelector('#homePage');
     const menuHeader = document.querySelector('#menuPageHeader');
     const contactPageHeader = document.querySelector('#contactPageHeader');
-    
+    const footer = document.querySelector('#botline');
+    footer.remove();
+
     if (typeof(menuHeader) != 'undefined' && menuHeader != null) {
         menuHeader.remove();
     } else if (typeof(contactPageHeader) != 'undefined' && contactPageHeader != null) {
@@ -37,7 +42,7 @@ const homePageLoad = () => {
     }
 
     if (header == null) {
-        content.append(pageElements());
+        content.append(pageElements(), footerContent());
     }
 }
 
@@ -46,7 +51,9 @@ const contactPageLoad = () => {
     const header = document.querySelector('#homePage');
     const menuHeader = document.querySelector('#menuPageHeader');
     const contactPageHeader = document.querySelector('#contactPageHeader');
-    
+    const footer = document.querySelector('#botline');
+    footer.remove();
+
     if(typeof(header) != 'undefined' && header != null) {
         header.remove();
     } else if (typeof(menuHeader) != 'undefined' && menuHeader != null) {
@@ -54,7 +61,7 @@ const contactPageLoad = () => {
     }
     
     if (contactPageHeader == null) {
-        content.append(contactPage());
+        content.append(contactPage(), footerContent());
     }
 }
 
