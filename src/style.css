@@ -122,3 +122,22 @@ p {
 #addressPic {
     height: 500px;
 }
+
+a {
+    text-decoration: none;
+}
+
+#gitImg {
+    height: 16px;
+    background-color: rgb(255, 227, 191);
+}
+
+footer {
+    text-decoration: none;
+    font-family: 'MyFont2';
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-align: center;
+    margin-top: auto;
+}
