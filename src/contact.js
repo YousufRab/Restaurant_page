@@ -1,6 +1,6 @@
 export const contactPage = () => {
 
-    const contactHeader = document.createElement('div');
+    const contactHeader = document.createElement('h1');
     contactHeader.innerHTML = "Contact";
     contactHeader.id = 'contactPageHeader';
 
@@ -11,9 +11,11 @@ export const contactPage = () => {
 
     const hours = document.createElement('p');
     hours.innerHTML = '9am - 10pm everyday';
+    contactContainer.append(hours);
 
     const email = document.createElement('p');
-    email.innerHTML = 'info@Sono.ca';
+    email.innerHTML = 'info@Sono.com';
+    contactContainer.append(email);
 
 
     return contactHeader;
