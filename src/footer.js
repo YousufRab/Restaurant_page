@@ -4,7 +4,7 @@ export const footerContent = () => {
 
     const footer = document.createElement('footer');
     footer.id = 'botline';
-    footer.innerHTML = "Copyright © 2022";
+    footer.innerHTML = "Copyright © 2022 ";
 
     const gitLogo = new Image();
     gitLogo.src = gitlogo;
