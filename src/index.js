@@ -26,6 +26,7 @@ const menuPageLoad = () => {
 
 const homePageLoad = () => {
 
+    const header = document.querySelector('#homePage');
     const menuHeader = document.querySelector('#menuPageHeader');
     const contactPageHeader = document.querySelector('#contactPageHeader');
     
@@ -35,7 +36,9 @@ const homePageLoad = () => {
         contactPageHeader.remove();
     }
 
-    content.append(pageElements());
+    if (header == null) {
+        content.append(pageElements());
+    }
 }
 
 const contactPageLoad = () => {
