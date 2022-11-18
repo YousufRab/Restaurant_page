@@ -1,7 +1,7 @@
 import './style.css';
 import {pageElements, pageTabs} from './pageContent';
 import {menuPage} from './menu';
-import { contactPage } from './contact';
+import {contactPage} from './contact';
 
 const content = document.querySelector('#content');
 
@@ -19,7 +19,13 @@ const menuPageLoad = () => {
 const homePageLoad = () => {
 
     const menuHeader = document.querySelector('#menuPageHeader');
-    menuHeader.remove();
+    const contactPageHeader = document.querySelector('#contactPageHeader');
+    
+    if (typeof(menuHeader) != 'undefined' && menuHeader != null) {
+        menuHeader.remove();
+    } else if (typeof(contactPageHeader) != 'undefined' && contactPageHeader != null) {
+        contactPageHeader.remove();
+    }
 
     content.append(pageElements());
 }
@@ -35,8 +41,6 @@ const contactPageLoad = () => {
         menuHeader.remove();
     }
     
-
-
     content.append(contactPage());
 }
 
