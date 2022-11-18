@@ -10,10 +10,15 @@ content.append(pageTabs(), pageElements());
 const menuPageLoad = () => {
 
     const header = document.querySelector('#homePage');
-    header.remove();
+    const contactPageHeader = document.querySelector('#contactPageHeader');
+
+    if (typeof(header) != 'undefined' && header != null) {
+        header.remove();
+    } else if (typeof(contactPageHeader) != 'undefined' && contactPageHeader != null) {
+        contactPageHeader.remove();
+    }
     
     content.append(menuPage());
-
 }
 
 const homePageLoad = () => {
