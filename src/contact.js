@@ -1,3 +1,5 @@
+import addPic from './address.jpg';
+
 export const contactPage = () => {
 
     const contactHeader = document.createElement('h1');
@@ -21,9 +23,14 @@ export const contactPage = () => {
     telephone.innerHTML = '+1 (604) 4799 5511';
     contactContainer.append(telephone);
 
-    
+    const address = document.createElement('p');
+    address.innerHTML = '125 Granville Street, Vancouver M2M N4U';
+    contactContainer.append(address);
 
+    const addressPic = new Image();
+    addressPic.src = addPic;
+    addressPic.id = "addressPic";
+    contactContainer.append(addressPic);
 
     return contactHeader;
-
 }
