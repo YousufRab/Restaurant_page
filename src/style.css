@@ -115,8 +115,9 @@ p {
     grid-template-columns: 1fr 1fr;
 }
 
-#homePage, #menuPageHeader {
-    transition: all 0.2s ease;
+#homePage, #menuPageHeader, #contactPageHeader {
+    opacity: 1;
+    transition: ease-out 0.5s;
 }
 
 #addressPic {
