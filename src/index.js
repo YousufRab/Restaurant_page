@@ -14,12 +14,14 @@ const menuPageLoad = () => {
     const contactPageHeader = document.querySelector('#contactPageHeader');
     const menuHeader = document.querySelector('#menuPageHeader');
     const footer = document.querySelector('#botline');
-    footer.remove();
 
     if (typeof(header) != 'undefined' && header != null) {
-        header.remove();
+        waitHideHomePage();
+        setTimeout(() => {header.remove()}, 1000);
+        footer.remove();
     } else if (typeof(contactPageHeader) != 'undefined' && contactPageHeader != null) {
         contactPageHeader.remove();
+        footer.remove();
     }
     
     if (menuHeader == null) {
@@ -33,12 +35,13 @@ const homePageLoad = () => {
     const menuHeader = document.querySelector('#menuPageHeader');
     const contactPageHeader = document.querySelector('#contactPageHeader');
     const footer = document.querySelector('#botline');
-    footer.remove();
 
     if (typeof(menuHeader) != 'undefined' && menuHeader != null) {
         menuHeader.remove();
+        footer.remove();
     } else if (typeof(contactPageHeader) != 'undefined' && contactPageHeader != null) {
         contactPageHeader.remove();
+        footer.remove();
     }
 
     if (header == null) {
@@ -52,12 +55,13 @@ const contactPageLoad = () => {
     const menuHeader = document.querySelector('#menuPageHeader');
     const contactPageHeader = document.querySelector('#contactPageHeader');
     const footer = document.querySelector('#botline');
-    footer.remove();
 
     if(typeof(header) != 'undefined' && header != null) {
         header.remove();
+        footer.remove();
     } else if (typeof(menuHeader) != 'undefined' && menuHeader != null) {
         menuHeader.remove();
+        footer.remove();
     }
     
     if (contactPageHeader == null) {
@@ -73,3 +77,11 @@ menuBtn.addEventListener('click', menuPageLoad);
 
 const contactBtn = document.querySelector('.contact');
 contactBtn.addEventListener('click', contactPageLoad);
+
+function waitHideHomePage() {
+    var obj = document.getElementById('homePage');
+    obj.style.opacity = '0';
+    setTimeout(() => {
+        obj.style.display = 'none';
+    }, 500);
+}
