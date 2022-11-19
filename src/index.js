@@ -29,7 +29,7 @@ const menuPageLoad = () => {
         content.append(menuPage(), footerContent());
         const menuHeader = document.querySelector('#menuPageHeader');
         menuHeader.style.opacity = '0';
-        setTimeout(() => {menuHeader.style.opacity = '1'}, 500);
+        setTimeout(() => {menuHeader.style.opacity = '1'}, 700);
     }
 }
 
@@ -92,6 +92,14 @@ function waitHideHomePage() {
 
 function waitHideContactPage() {
     var obj = document.getElementById('contactPageHeader');
+    obj.style.opacity = '0';
+    setTimeout(() => {
+        obj.style.display = 'none';
+    }, 500);
+}
+
+function waitHideMenuPage() {
+    var obj = document.getElementById('menuPageHeader');
     obj.style.opacity = '0';
     setTimeout(() => {
         obj.style.display = 'none';
