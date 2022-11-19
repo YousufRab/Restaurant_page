@@ -17,16 +17,19 @@ const menuPageLoad = () => {
 
     if (typeof(header) != 'undefined' && header != null) {
         waitHideHomePage();
-        setTimeout(() => {header.remove()}, 1000);
+        setTimeout(() => {header.remove()}, 800);
         footer.remove();
     } else if (typeof(contactPageHeader) != 'undefined' && contactPageHeader != null) {
         waitHideContactPage();
-        setTimeout(() => {contactPageHeader.remove()}, 1000);
+        setTimeout(() => {contactPageHeader.remove()}, 800);
         footer.remove();
     }
     
     if (menuHeader == null) {
         content.append(menuPage(), footerContent());
+        const menuHeader = document.querySelector('#menuPageHeader');
+        menuHeader.style.opacity = '0';
+        setTimeout(() => {menuHeader.style.opacity = '1'}, 500);
     }
 }
 
