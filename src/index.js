@@ -41,15 +41,20 @@ const homePageLoad = () => {
     const footer = document.querySelector('#botline');
 
     if (typeof(menuHeader) != 'undefined' && menuHeader != null) {
-        menuHeader.remove();
+        waitHideMenuPage();
+        setTimeout(()=> {menuHeader.remove()}, 800);
         footer.remove();
     } else if (typeof(contactPageHeader) != 'undefined' && contactPageHeader != null) {
-        contactPageHeader.remove();
+        waitHideContactPage();
+        setTimeout(() => {contactPageHeader.remove()}, 800);
         footer.remove();
     }
 
     if (header == null) {
         content.append(pageElements(), footerContent());
+        const header = document.querySelector('#homePage');
+        header.style.opacity = '0';
+        setTimeout(() => {header.style.opacity = '1'}, 700);
     }
 }
 
@@ -61,15 +66,20 @@ const contactPageLoad = () => {
     const footer = document.querySelector('#botline');
 
     if(typeof(header) != 'undefined' && header != null) {
-        header.remove();
+        waitHideHomePage();
+        setTimeout(() => {header.remove()}, 800);
         footer.remove();
     } else if (typeof(menuHeader) != 'undefined' && menuHeader != null) {
-        menuHeader.remove();
+        waitHideMenuPage();
+        setTimeout(()=> {menuHeader.remove()}, 800);
         footer.remove();
     }
     
     if (contactPageHeader == null) {
         content.append(contactPage(), footerContent());
+        const contactPageHeader = document.querySelector('#contactPageHeader');
+        contactPageHeader.style.opacity = '0';
+        setTimeout(() => {contactPageHeader.style.opacity = '1'}, 700);
     }
 }
 
