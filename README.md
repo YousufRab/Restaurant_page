@@ -9,3 +9,5 @@ Credit for free-to-use photographs used in the project goes to:
 - Ricotta pancakes - Photo by None Other on Unsplash
 - Cannoli - Photo by Lisa Gageler on Unsplash
 - Bruschetta - Photo by Margarita Zueva on Unsplash
+
+[[Live demo]](https://yousufrab.github.io/Restaurant_page/)
