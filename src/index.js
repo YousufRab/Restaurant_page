@@ -20,7 +20,8 @@ const menuPageLoad = () => {
         setTimeout(() => {header.remove()}, 1000);
         footer.remove();
     } else if (typeof(contactPageHeader) != 'undefined' && contactPageHeader != null) {
-        contactPageHeader.remove();
+        waitHideContactPage();
+        setTimeout(() => {contactPageHeader.remove()}, 1000);
         footer.remove();
     }
     
@@ -80,6 +81,14 @@ contactBtn.addEventListener('click', contactPageLoad);
 
 function waitHideHomePage() {
     var obj = document.getElementById('homePage');
+    obj.style.opacity = '0';
+    setTimeout(() => {
+        obj.style.display = 'none';
+    }, 500);
+}
+
+function waitHideContactPage() {
+    var obj = document.getElementById('contactPageHeader');
     obj.style.opacity = '0';
     setTimeout(() => {
         obj.style.display = 'none';
